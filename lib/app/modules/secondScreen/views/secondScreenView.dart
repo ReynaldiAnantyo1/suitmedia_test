@@ -13,18 +13,28 @@ class SecondScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(
+            Icons.arrow_back_ios_new,
+            size: 18,
+            color: Color(0xFF554AF0),
+          ),
+          onPressed: () => Get.back(),
+        ),
         title: const Text(
           'Second Screen',
           style: TextStyle(
-            color: Colors.black,
+            color: Color(0XFF04021D),
             fontSize: 18,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.w800,
           ),
         ),
         centerTitle: true,
         backgroundColor: Colors.white,
-        elevation: 0.5,
-        iconTheme: const IconThemeData(color: Color(0XFF04021D)),
+        elevation: 0,
+        shape: const Border(
+          bottom: BorderSide(color: Color(0xFFE2E3E4), width: 1),
+        ),
       ),
       body: SafeArea(
         child: Padding(
@@ -55,7 +65,7 @@ class SecondScreen extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black,
+                      color: Color(0xFF04021D),
                     ),
                     textAlign: TextAlign.center,
                   ),

@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:suitmedia_test/app/modules/firstScreen/views/firstScreenView.dart';
 import 'package:suitmedia_test/app/modules/secondScreen/views/secondScreenView.dart';
-import 'package:suitmedia_test/app/modules/thirdScreen/thirdScreenView.dart';
+import 'package:suitmedia_test/app/modules/thirdScreen/views/thirdScreenView.dart';
 
 void main() {
   runApp(const MainApp());
